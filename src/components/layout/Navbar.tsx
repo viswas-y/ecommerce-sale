@@ -99,7 +99,7 @@ export const Navbar: React.FC = () => {
             </Link>
 
             <Link
-              href="/account/wishlist"
+              href="/wishlist"
               aria-label="Wishlist"
               className="relative text-zinc-600 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white"
             >

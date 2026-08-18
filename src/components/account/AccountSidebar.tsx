@@ -9,7 +9,7 @@ export const AccountSidebar: React.FC = () => {
   const links = [
     { label: "Profile Settings", href: "/account" },
     { label: "Order History", href: "/account/orders" },
-    { label: "My Wishlist", href: "/account/wishlist" },
+    { label: "My Wishlist", href: "/wishlist" },
     { label: "Saved Addresses", href: "/account/addresses" },
   ];
 

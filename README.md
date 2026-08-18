@@ -17,6 +17,10 @@ npm run dev
 npm run build
 ```
 
+## 📖 Template Documentation
+For detailed customization instructions (e.g. changing logos, modifying colors, managing categories, connecting payment gateways, and backend setup), please open the interactive documentation:
+- Open [`documentation/readme.html`](file:///c:/Users/ambad/OneDrive/Desktop/ecommerce-sale/documentation/readme.html) in your browser.
+
 ## 🛠 Technology Stack
 
 - **Core Framework:** Next.js 16 (App Router), React 19, TypeScript

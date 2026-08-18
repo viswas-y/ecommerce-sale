@@ -86,8 +86,8 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-center justify-between border-t border-zinc-200 dark:border-zinc-900 mt-12 pt-8 text-xs text-zinc-400">
           <span>&copy; {new Date().getFullYear()} {brand.name} Inc. All rights reserved.</span>
           <div className="flex gap-6 mt-4 sm:mt-0">
-            <span className="hover:text-zinc-900 dark:hover:text-white cursor-pointer transition">Privacy Policy</span>
-            <span className="hover:text-zinc-900 dark:hover:text-white cursor-pointer transition">Terms of Sale</span>
+            <Link href="/privacy" className="hover:text-zinc-900 dark:hover:text-white transition">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-zinc-900 dark:hover:text-white transition">Terms of Sale</Link>
           </div>
         </div>
       </div>

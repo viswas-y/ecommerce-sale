@@ -1,16 +1,31 @@
-"use client";
-
 import React from "react";
-import { ThemeProvider } from "@/components/provider/ThemeProvider";
-import { ToastProvider } from "@/components/provider/ToastProvider";
-import { Navbar } from "@/components/layout/Navbar";
-import { MobileNav } from "@/components/layout/MobileNav";
-import { Footer } from "@/components/layout/Footer";
-import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
-import { CartDrawer } from "@/components/cart/CartDrawer";
-import { QuickViewModal } from "@/components/product/QuickViewModal";
-import { AuthModal } from "@/components/ui/AuthModal";
+import { Metadata } from "next";
+import { ClientLayout } from "@/components/layout/ClientLayout";
 import "@/app/globals.css";
+
+export const metadata: Metadata = {
+  title: "NOVARA — Premium Designer Essentials",
+  description: "Discover thoughtfully designed clothing, workspace essentials, and home objects made for modern, intentional living.",
+  keywords: ["ecommerce", "fashion", "workspace", "minimalist", "design", "next.js", "react", "template"],
+  authors: [{ name: "NOVARA Atelier" }],
+  openGraph: {
+    title: "NOVARA — Premium Designer Essentials",
+    description: "Discover thoughtfully designed clothing, workspace essentials, and home objects made for modern, intentional living.",
+    type: "website",
+    locale: "en_US",
+    url: "https://novaradesign.com",
+    siteName: "NOVARA",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NOVARA — Premium Designer Essentials",
+    description: "Discover thoughtfully designed clothing, workspace essentials, and home objects made for modern, intentional living.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function RootLayout({
   children,
@@ -28,20 +43,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans-premium bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50 antialiased min-h-screen flex flex-col justify-between">
-        <ThemeProvider>
-          <ToastProvider>
-            <div>
-              <AnnouncementBar />
-              <Navbar />
-              <MobileNav />
-              <main>{children}</main>
-            </div>
-            <Footer />
-            <CartDrawer />
-            <QuickViewModal />
-            <AuthModal />
-          </ToastProvider>
-        </ThemeProvider>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
