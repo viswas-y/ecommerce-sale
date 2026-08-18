@@ -180,37 +180,37 @@ export default function HomePage() {
           <div className="flex flex-col items-center text-center p-4">
             <ShieldCheck size={32} className="text-zinc-400 mb-4" />
             <h3 className="text-sm font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
-              Secure payments
+              Payment Gateway Ready
             </h3>
             <p className="text-xs text-zinc-400 mt-2 max-w-xs leading-relaxed">
-              We process secure, encrypted transactions supporting standard digital gateways.
+              Integrate Stripe, PayPal, or any gateway of your choice inside the checkout handler.
             </p>
           </div>
           <div className="flex flex-col items-center text-center p-4">
             <CreditCard size={32} className="text-zinc-400 mb-4" />
             <h3 className="text-sm font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
-              Free Shipping
+              Customizable Shipping
             </h3>
             <p className="text-xs text-zinc-400 mt-2 max-w-xs leading-relaxed">
-              Complementary standard delivery is applied automatically on checkout orders over $100.
+              Configure domestic and international shipping options and rate thresholds inside code settings.
             </p>
           </div>
           <div className="flex flex-col items-center text-center p-4">
             <RotateCcw size={32} className="text-zinc-400 mb-4" />
             <h3 className="text-sm font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
-              Easy 30-Day Returns
+              Configure Return Policy
             </h3>
             <p className="text-xs text-zinc-400 mt-2 max-w-xs leading-relaxed">
-              No questions asked return system using our online labels portals.
+              Draft your custom returns policy guidelines and online returns portal integration.
             </p>
           </div>
           <div className="flex flex-col items-center text-center p-4">
             <Headphones size={32} className="text-zinc-400 mb-4" />
             <h3 className="text-sm font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
-              Premium Desk Support
+              Connect Support Channels
             </h3>
             <p className="text-xs text-zinc-400 mt-2 max-w-xs leading-relaxed">
-              Reach out to our concierge advisors round-the-clock via support channels.
+              Set up live chat advisors, desk ticketing widgets, or customer service email accounts.
             </p>
           </div>
         </div>
